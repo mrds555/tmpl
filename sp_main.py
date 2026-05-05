@@ -137,6 +137,7 @@ y = pd.Series(y)
 duplicate_cols = X.columns[X.columns.duplicated()].tolist()
 if duplicate_cols:
     print(f"Found {len(duplicate_cols)} duplicates: {duplicate_cols}")
+    
     # Keep only the first occurrence of each column name
     X = X.loc[:, ~X.columns.duplicated(keep='last')] # without keep='last' leaves first in.
     print(f"Removed duplicates leaving last column only")
