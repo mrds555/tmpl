@@ -133,14 +133,6 @@ y = train_df['y']
 y = LabelEncoder().fit_transform(y)
 y = pd.Series(y)
 
-# le = LabelEncoder()
-# y_encoded = le.fit_transform(train_df['Severity'])
-# # ... after training and getting y_pred ...
-# # Revert to original strings
-# y_original = le.inverse_transform(y_pred)
-
-
-# X = X.values
 
 duplicate_cols = X.columns[X.columns.duplicated()].tolist()
 if duplicate_cols:
