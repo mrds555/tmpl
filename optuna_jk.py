@@ -365,7 +365,7 @@ def optuna_db_to_csv(study_name='ts_0304'):
     #### working query
     import urllib.parse
     
-    optunapw = '7931' # os.getenv('optunapw')
+    optunapw = os.getenv('optunapw')
     
     DB_PARAMS = {
         "host": '192.168.1.254',
