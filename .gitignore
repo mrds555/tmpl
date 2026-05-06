@@ -2,3 +2,6 @@ models/
 catboost_info/
 __*/
 .*/
+*.csv
+
+!.gitignore
