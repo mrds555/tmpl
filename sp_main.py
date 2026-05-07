@@ -292,7 +292,8 @@ def main():
     # 4. Results
     # ======================
 
-    return study.best_value
+    return study
 
 if __name__ == "__main__":
-    print(f"Best value: {main()}")
+    study = main()
+    print(f"Best value: {study.best_value}")
